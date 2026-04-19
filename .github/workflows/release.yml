@@ -1,0 +1,107 @@
+name: Build Release APK
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG_RE='^v[0-9]+\.[0-9]+\.[0-9]+$'
+
+          HEAD_TAG=$(git tag --points-at HEAD | grep -E "$TAG_RE" | sort -V | tail -1 || true)
+          if [ -n "$HEAD_TAG" ]; then
+            echo "HEAD already tagged: $HEAD_TAG"
+            TAG="$HEAD_TAG"
+            NEEDS_TAG=false
+          else
+            LATEST=$(git tag --list 'v[0-9]*.[0-9]*.[0-9]*' | grep -E "$TAG_RE" | sort -V | tail -1 || true)
+            if [ -z "$LATEST" ]; then
+              TAG="v1.0.0"
+            else
+              IFS='.' read -r MAJOR MINOR PATCH <<< "${LATEST#v}"
+              TAG="v${MAJOR}.${MINOR}.$((PATCH + 1))"
+            fi
+            echo "Next version: $TAG (latest was: ${LATEST:-none})"
+            NEEDS_TAG=true
+          fi
+
+          VERSION="${TAG#v}"
+          {
+            echo "tag=$TAG"
+            echo "version=$VERSION"
+            echo "needs_tag=$NEEDS_TAG"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.41.7'
+          channel: stable
+          cache: true
+
+      - name: Sync pubspec version
+        shell: bash
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          BUILD="${GITHUB_RUN_NUMBER}"
+          sed -i -E "s/^version: .*/version: ${VERSION}+${BUILD}/" pubspec.yaml
+          grep '^version:' pubspec.yaml
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build release APK
+        run: flutter build apk --release
+
+      - name: Rename APK
+        shell: bash
+        run: |
+          mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk \
+             "dist/flight-checklist-${{ steps.version.outputs.tag }}.apk"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flight-checklist-${{ steps.version.outputs.tag }}
+          path: dist/flight-checklist-${{ steps.version.outputs.tag }}.apk
+          if-no-files-found: error
+
+      - name: Create tag
+        if: steps.version.outputs.needs_tag == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag "${{ steps.version.outputs.tag }}"
+          git push origin "${{ steps.version.outputs.tag }}"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: ${{ steps.version.outputs.tag }}
+          files: dist/flight-checklist-${{ steps.version.outputs.tag }}.apk
+          generate_release_notes: true

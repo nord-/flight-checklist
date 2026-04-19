@@ -1,0 +1,300 @@
+{
+  "id": "pa28_emergency",
+  "title": "PA-28-181 Emergency",
+  "aircraft": "SE-KMR",
+  "emergency": true,
+  "note": "2024-02-25 rev 3",
+  "pages": [
+    {
+      "id": "engine-failure",
+      "title": "Engine Failure",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "airspeed", "label": "Airspeed", "value": "76 KIAS" },
+            { "id": "field", "label": "Field", "value": "IN SIGHT" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "SHIFT" },
+            { "id": "fuel-pump", "label": "Fuel pump", "value": "ON" },
+            { "id": "mixture", "label": "Mixture", "value": "RICH" },
+            { "id": "carb-heat", "label": "Carburetor heat", "value": "ON" },
+            { "id": "primer", "label": "Primer", "value": "LOCKED" },
+            { "id": "magnetos", "label": "Magnetos", "value": "CHECKED" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emergency-landing",
+      "title": "Emergency Landing",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "airspeed", "label": "Airspeed App / Final", "value": "76 / 66 KIAS" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "OFF" },
+            { "id": "ignition", "label": "Ignition", "value": "OFF" },
+            { "id": "mixture", "label": "Mixture", "value": "IDLE CUT-OFF" },
+            { "id": "safety-belts", "label": "Safety belts", "value": "SECURED" },
+            { "id": "radio-trsp", "label": "Radio / TRSP", "value": "121.5 / 7700" },
+            { "id": "alt-bat", "label": "ALT / BAT switch", "value": "OFF ON FINAL" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engine-fire-start",
+      "title": "Engine Fire During Start",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "starter", "label": "Starter", "value": "CRANK ENGINE" },
+            { "id": "mixture", "label": "Mixture", "value": "IDLE CUT-OFF" },
+            { "id": "throttle", "label": "Throttle", "value": "OPEN" },
+            { "id": "fuel-pump", "label": "Fuel pump", "value": "OFF" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "OFF" },
+            { "id": "abandon", "label": "ABANDON IF FIRE CONTINUES" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fire-in-flight",
+      "title": "Fire in Flight",
+      "chapters": [
+        {
+          "title": "Identify",
+          "items": [
+            { "id": "source", "label": "Source of fire", "value": "CHECK" }
+          ]
+        },
+        {
+          "title": "Electrical Fire",
+          "items": [
+            { "id": "alt-bat", "label": "ALT / BAT switch", "value": "OFF" },
+            { "id": "vents", "label": "Vents", "value": "OPEN" },
+            { "id": "cabin-heat", "label": "Cabin heat", "value": "OFF" },
+            { "id": "fire", "label": "Fire", "value": "EXTINGUISH" },
+            { "id": "land-practicable", "label": "Land as soon as practicable" }
+          ]
+        },
+        {
+          "title": "Engine Fire",
+          "items": [
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "OFF" },
+            { "id": "throttle", "label": "Throttle", "value": "CLOSED" },
+            { "id": "mixture", "label": "Mixture", "value": "IDLE CUT-OFF" },
+            { "id": "fuel-pump", "label": "Fuel pump", "value": "OFF" },
+            { "id": "heater", "label": "Heater and defroster", "value": "OFF" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "low-oil-pressure",
+      "title": "Low Oil Pressure",
+      "chapters": [
+        {
+          "title": "Action",
+          "items": [
+            { "id": "land", "label": "Land as soon as possible" },
+            { "id": "prepare", "label": "Prepare for EMERGENCY LANDING" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "high-oil-temperature",
+      "title": "High Oil Temperature",
+      "chapters": [
+        {
+          "title": "Action",
+          "items": [
+            { "id": "land", "label": "Land at nearest airport" },
+            { "id": "prepare", "label": "Prepare for EMERGENCY LANDING" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "low-fuel-pressure",
+      "title": "Low Fuel Pressure",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "fuel-pump", "label": "Fuel pump", "value": "ON" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "SHIFT" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alternator-failures",
+      "title": "Alternator Failures",
+      "chapters": [
+        {
+          "title": "If ammeter zero",
+          "items": [
+            { "id": "alt-switch-off", "label": "ALT switch", "value": "OFF" },
+            { "id": "electrical-load", "label": "Electrical load", "value": "REDUCE TO MIN" },
+            { "id": "alt-cb", "label": "ALT circuit breaker", "value": "CHECK / RESET" },
+            { "id": "alt-switch-on", "label": "ALT switch", "value": "ON" }
+          ]
+        },
+        {
+          "title": "If power not restored",
+          "items": [
+            { "id": "alt-switch-off-2", "label": "ALT switch", "value": "OFF" },
+            { "id": "electrical-load-2", "label": "Electrical load", "value": "REDUCE TO MIN" },
+            { "id": "land", "label": "Land as soon as practicable" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrical-overload",
+      "title": "Electrical Overload",
+      "chapters": [
+        {
+          "title": "Initial",
+          "items": [
+            { "id": "alt-switch-on", "label": "ALT switch", "value": "ON" },
+            { "id": "bat-switch-off", "label": "BAT switch", "value": "OFF" }
+          ]
+        },
+        {
+          "title": "If ALT loads are reduced",
+          "items": [
+            { "id": "electrical-load", "label": "Electrical load", "value": "REDUCE TO MIN" },
+            { "id": "land-practicable", "label": "Land as soon as practicable" }
+          ]
+        },
+        {
+          "title": "If ALT loads not reduced",
+          "items": [
+            { "id": "alt-switch-off", "label": "ALT switch", "value": "OFF" },
+            { "id": "bat-switch", "label": "BAT switch", "value": "AS REQUIRED" },
+            { "id": "land-possible", "label": "Land as soon as possible" },
+            { "id": "anticipate", "label": "Anticipate complete electrical failure" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spin-recovery",
+      "title": "Spin Recovery",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "throttle", "label": "Throttle", "value": "IDLE" },
+            { "id": "ailerons", "label": "Ailerons", "value": "NEUTRAL" },
+            { "id": "rudder-opposite", "label": "Rudder", "value": "FULL OPPOSITE" },
+            { "id": "control-wheel-fwd", "label": "Control wheel", "value": "FULL FORWARD" },
+            { "id": "rudder-neutral", "label": "Rudder", "value": "NEUTRAL" },
+            { "id": "control-wheel-req", "label": "Control wheel", "value": "AS REQUIRED" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close-open-door",
+      "title": "Close Open Door in Flight",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "airspeed", "label": "Airspeed", "value": "87 KIAS" },
+            { "id": "cabin-vents", "label": "Cabin vents", "value": "CLOSE" },
+            { "id": "storm-window", "label": "Storm window", "value": "OPEN" },
+            { "id": "side-latch", "label": "Side latch", "value": "LATCH" },
+            { "id": "upper-latch", "label": "Upper latch", "value": "LATCH" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carburetor-icing",
+      "title": "Carburetor Icing",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "carb-heat", "label": "Carburetor heat", "value": "ON" },
+            { "id": "mixture", "label": "Mixture", "value": "ADJUST" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engine-roughness",
+      "title": "Engine Roughness",
+      "chapters": [
+        {
+          "title": "Initial",
+          "items": [
+            { "id": "carb-heat-on", "label": "Carburetor heat", "value": "ON" }
+          ]
+        },
+        {
+          "title": "If roughness continues 1 min",
+          "items": [
+            { "id": "carb-heat-off", "label": "Carburetor heat", "value": "OFF" },
+            { "id": "mixture", "label": "Mixture", "value": "ADJUST" },
+            { "id": "fuel-pump", "label": "Fuel pump", "value": "ON" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "SHIFT" },
+            { "id": "engine-instrument", "label": "Engine instrument", "value": "CHECK" },
+            { "id": "magneto-switch", "label": "Magneto switch", "value": "L / R / BOTH" },
+            { "id": "prepare", "label": "Prepare for EMERGENCY LANDING" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "autopilot-malfunction",
+      "title": "Autopilot Malfunction",
+      "chapters": [
+        {
+          "title": "If the airplane deviates unexpectedly",
+          "items": [
+            { "id": "control-wheel", "label": "Control Wheel", "value": "GRIP FIRMLY" },
+            { "id": "ap-disc-hold", "label": "AP DISC", "value": "PRESS AND HOLD" },
+            { "id": "attitude", "label": "Aircraft Attitude", "value": "MAINTAIN" },
+            { "id": "elevator-trim", "label": "Elevator Trim", "value": "RE-TRIM" },
+            { "id": "ap-cb", "label": "AP Circuit Breaker", "value": "PULL" },
+            { "id": "ap-disc-release", "label": "AP DISC", "value": "RELEASE" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "autopilot-abnormal-disconnect",
+      "title": "Autopilot Abnormal Disconnect",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "ap-disc", "label": "AP DISC", "value": "PRESS AND RELEASE" },
+            { "id": "attitude", "label": "Aircraft Attitude", "value": "MAINTAIN" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pitch-trim-failure",
+      "title": "Pitch Trim Failure / Runaway",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "control-wheel", "label": "Control Wheel", "value": "GRIP FIRMLY" },
+            { "id": "trim-activate", "label": "TRIM ACTIVATE", "value": "OFF" },
+            { "id": "elevator-trim", "label": "Elevator Trim", "value": "RE-TRIM MANUALLY" }
+          ]
+        }
+      ]
+    }
+  ]
+}
