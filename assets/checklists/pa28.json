@@ -1,0 +1,247 @@
+{
+  "id": "pa28",
+  "title": "PA-28-181",
+  "aircraft": "SE-KMR",
+  "emergency": false,
+  "note": "2024-02-25 rev 3",
+  "pages": [
+    {
+      "id": "pre-flight-inspection",
+      "title": "Pre-flight Inspection",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "control-wheel", "label": "Control wheel", "value": "RELEASE" },
+            { "id": "poh-refs", "label": "POH / Reference Guides", "value": "ACCESSIBLE" },
+            { "id": "aircraft-docs", "label": "Aircraft Documents", "value": "ON BOARD" },
+            { "id": "avionics-master-off", "label": "Avionics master", "value": "OFF" },
+            { "id": "bat-switch-on", "label": "BAT switch", "value": "ON" },
+            { "id": "fuel-qty", "label": "Fuel quantity", "value": "CHECKED" },
+            { "id": "lights", "label": "Lights", "value": "CHECKED" },
+            { "id": "stall-warning", "label": "Stall warning", "value": "CHECKED" },
+            { "id": "bat-switch-off", "label": "BAT switch", "value": "OFF" },
+            { "id": "ignition", "label": "Ignition", "value": "OFF" },
+            { "id": "exterior", "label": "Exterior", "value": "CHECKED" },
+            { "id": "fuel-tank-strainer", "label": "Fuel tank / Fuel strainer", "value": "CHECKED" },
+            { "id": "fuel-vents", "label": "Fuel vents", "value": "OPEN" },
+            { "id": "oil", "label": "Oil", "value": "CHECKED" },
+            { "id": "cowling", "label": "Cowling / Inspection covers", "value": "SECURED" },
+            { "id": "prop-spinner", "label": "Propeller and spinner", "value": "CHECKED" },
+            { "id": "air-inlets", "label": "Air inlets", "value": "CLEAR" },
+            { "id": "alt-belt", "label": "Alternator belt", "value": "TENSION" },
+            { "id": "tires", "label": "Tires", "value": "CHECKED" },
+            { "id": "nose-gear", "label": "Nose gear strut", "value": "PROPER INF" },
+            { "id": "main-gear", "label": "Main gear struts", "value": "PROPER INF" },
+            { "id": "brake-blocks", "label": "Brake blocks", "value": "CHECKED" },
+            { "id": "wings", "label": "Wings", "value": "CHECKED" },
+            { "id": "control-surfaces", "label": "Control Surfaces / Hinges", "value": "CHECKED" },
+            { "id": "pitot-heat-cover", "label": "Pitot heat cover", "value": "REMOVED" },
+            { "id": "windshield", "label": "Windshield", "value": "CLEAN" },
+            { "id": "tow-bar", "label": "Tow bar", "value": "STOWED" },
+            { "id": "baggage-door", "label": "Baggage / Door", "value": "SEC / CLOSED" },
+            { "id": "primary-controls", "label": "Primary flight controls", "value": "OPERATION" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "before-engine-start",
+      "title": "Before Engine Start",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "pre-flight-insp", "label": "Pre-flight inspection", "value": "COMPLETED" },
+            { "id": "emergency-equipment", "label": "Emergency equipment", "value": "CHECKED" },
+            { "id": "docs", "label": "Crew & Aircraft documents", "value": "CHECKED" },
+            { "id": "crew-stations", "label": "Crew stations", "value": "CHECKED" },
+            { "id": "dep-briefing", "label": "Dep / Emergency briefing", "value": "REVIEWED" },
+            { "id": "brakes", "label": "Brakes", "value": "SET" },
+            { "id": "circuit-breakers", "label": "Circuit breakers", "value": "CHECKED" },
+            { "id": "trim-tab", "label": "Trim tab", "value": "SET FOR T/O" },
+            { "id": "carb-heat", "label": "Carburetor heat", "value": "OFF" },
+            { "id": "avionics-master", "label": "Avionics master", "value": "OFF" },
+            { "id": "bat-switch", "label": "BAT switch", "value": "ON" },
+            { "id": "fuel-qty", "label": "Fuel quantity", "value": "CHECKED" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "L / R" },
+            { "id": "fuel-pump", "label": "Fuel pump", "value": "ON" },
+            { "id": "mixture", "label": "Mixture", "value": "RICH" },
+            { "id": "throttle", "label": "Throttle (cold 1/4\" hot 1/2\")", "value": "SET" },
+            { "id": "primer", "label": "Primer", "value": "AS REQUIRED" },
+            { "id": "prop-clear", "label": "Propeller danger area", "value": "CLEAR L / R" },
+            { "id": "starter", "label": "Starter", "value": "ENGAGE" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "after-engine-start",
+      "title": "After Engine Start",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "throttle", "label": "Throttle", "value": "800-1200 RPM" },
+            { "id": "oil-pressure", "label": "Oil pressure", "value": "CHECKED" },
+            { "id": "alt-switch", "label": "ALT switch", "value": "ON" },
+            { "id": "avionics-master", "label": "Avionics master", "value": "ON" },
+            { "id": "com-nav-efis", "label": "COM / NAV / EFIS", "value": "SET" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxi",
+      "title": "Taxi",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "brakes", "label": "Brakes", "value": "CHECKED" },
+            { "id": "flight-instruments", "label": "Flight instruments", "value": "CHECKED" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "before-take-off",
+      "title": "Before Take Off",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "brakes", "label": "Brakes", "value": "SET" },
+            { "id": "flaps", "label": "Flaps", "value": "SET" },
+            { "id": "flight-controls", "label": "Flight controls", "value": "CHECKED" },
+            { "id": "mixture", "label": "Mixture", "value": "RICH" },
+            { "id": "throttle-2000", "label": "Throttle", "value": "2000 RPM" },
+            { "id": "magnetos", "label": "Magnetos (175 / 50)", "value": "CHECKED" },
+            { "id": "engine-instruments", "label": "Engine instruments", "value": "CHECKED" },
+            { "id": "annunciator", "label": "Annunciator panel", "value": "CHECKED" },
+            { "id": "carb-heat", "label": "Carburetor heat", "value": "CHECKED" },
+            { "id": "fuel-pump-off", "label": "Fuel pump", "value": "OFF" },
+            { "id": "fuel-pressure", "label": "Fuel pressure", "value": "CHECKED" },
+            { "id": "throttle-1000", "label": "Throttle", "value": "1000 RPM" },
+            { "id": "fuel-pump-on", "label": "Fuel pump", "value": "ON" },
+            { "id": "doors-windows", "label": "Doors & Windows", "value": "CHECKED" },
+            { "id": "altimeters", "label": "Altimeters", "value": "SET / CHECKED" },
+            { "id": "nav-efis", "label": "NAV / EFIS", "value": "SET / CHECKED" },
+            { "id": "dep-briefing", "label": "Dep / Emergency briefing", "value": "REVIEWED" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "line-up",
+      "title": "Line Up",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "strobe-lights", "label": "Strobe lights", "value": "ON" },
+            { "id": "transponder", "label": "Transponder", "value": "SET" },
+            { "id": "pitot-heat", "label": "Pitot heat", "value": "AS REQUIRED" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "climb",
+      "title": "Climb",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "flaps-up", "label": "Flaps", "value": "UP" },
+            { "id": "power", "label": "Power", "value": "SET" },
+            { "id": "engine-instruments", "label": "Engine instruments", "value": "CHECKED" },
+            { "id": "landing-lights", "label": "Landing lights", "value": "OFF" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cruise",
+      "title": "Cruise",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "power", "label": "Power", "value": "SET" },
+            { "id": "engine-instruments", "label": "Engine instruments", "value": "CHECKED" },
+            { "id": "fuel-pump-off", "label": "Fuel pump", "value": "OFF" },
+            { "id": "mixture-lean", "label": "Mixture", "value": "LEAN" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "L / R" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "descent",
+      "title": "Descent",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "cabin", "label": "Cabin", "value": "READY" },
+            { "id": "nav-efis", "label": "NAV / EFIS", "value": "SET" },
+            { "id": "altimeters", "label": "Altimeters", "value": "SET / CHECKED" },
+            { "id": "approach-briefing", "label": "Approach briefing", "value": "REVIEWED" },
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "L / R" },
+            { "id": "mixture-adjust", "label": "Mixture", "value": "ADJUST" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approach",
+      "title": "Approach",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "fuel-selector", "label": "Fuel selector", "value": "BEST TANK" },
+            { "id": "mixture-rich", "label": "Mixture", "value": "RICH" },
+            { "id": "fuel-pump-on", "label": "Fuel pump", "value": "ON" },
+            { "id": "flaps", "label": "Flaps", "value": "AS REQUIRED" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "after-landing",
+      "title": "After Landing",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "flaps-up", "label": "Flaps", "value": "UP" },
+            { "id": "landing-strobe", "label": "Landing & Strobe lights", "value": "OFF" },
+            { "id": "transponder-gnd", "label": "Transponder", "value": "GND" },
+            { "id": "pitot-heat-off", "label": "Pitot heat", "value": "OFF" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parking",
+      "title": "Parking",
+      "chapters": [
+        {
+          "title": "Items",
+          "items": [
+            { "id": "avionics-master-off", "label": "Avionics master", "value": "OFF" },
+            { "id": "mixture-cutoff", "label": "Mixture", "value": "IDLE CUT-OFF" },
+            { "id": "magnetos-off", "label": "Magnetos", "value": "OFF" },
+            { "id": "electrical-off", "label": "Electrical equipment", "value": "OFF" },
+            { "id": "bat-alt-off", "label": "BAT / ALT switch", "value": "OFF" },
+            { "id": "control-wheel", "label": "Control wheel", "value": "SECURE" },
+            { "id": "tacho-time", "label": "Tacho time", "value": "NOTE" },
+            { "id": "flight-plan", "label": "ATS Flight Plan", "value": "CLOSED" }
+          ]
+        }
+      ]
+    }
+  ]
+}
